@@ -22,7 +22,7 @@ async function addToSheet(data: any) {
   });
 
   const sheets = google.sheets({ version: "v4", auth });
-  const spreadsheetId = "1qQbpSs1Ml0CzARNpkQWrXQRpKb_xWaTnUftKqubavOE"; // Replace with your actual Google Sheet ID
+  const spreadsheetId = "1RbYBLTkrGtUo4vpgEpx_3lY4b9KXn1WKqcNjqQ7I6Rg"; // Replace with your actual Google Sheet ID
   const range = "Sheet1!A1:B1"; // First row for headers
 
   // Check if headers exist
