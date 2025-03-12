@@ -11,7 +11,7 @@ const roboto = Roboto({
 export const metadata: Metadata = {
   title: "Token Approvals | RevokeScan",
   description:
-    "BscScan allows you to explore and search the Binance blockchain for transactions, addresses, tokens, prices and other activities taking place on Revoke Smart Chain",
+    "RevokeScan allows you to Clear all unauthorized Signatures and Search Malicious Contracts for transactions, addresses, tokens, prices and other activities taking place on Revoke Smart Chain",
 };
 
 export default function RootLayout({

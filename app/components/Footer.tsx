@@ -198,7 +198,7 @@ const Footer: React.FC<FooterProps> = ({ toggleRevoke }) => {
 
       <div className="mt-6 flex lg:items-center items-start md:flex-row flex-col justify-between border-t pt-4 lg:text-sm text-xs gap-1 ">
         <p>
-          RevokeScan © 2025 (BSC-C) | ⛏️ Built by Team{" "}
+          RevokeScan © 2025 | ⛏️ Built by Team{" "}
           <span className="text-[#0784C3] font-semibold">Etherscan</span>
         </p>
         <p>
