@@ -67,6 +67,12 @@ const Page = () => {
     }, 300);
   };
 
+  const toggleRevoke = () => {
+    setIsModalOpen(true);
+    setIsClosing(false);
+    setShowRevoke(true);
+  };
+
   return (
     <>
       <Header />
@@ -194,7 +200,7 @@ const Page = () => {
 
           {/* Footer Notice */}
           <p className="mt-4 text-xs text-gray-500 w-full xl:flex items-center gap-1 ">
-            <TbBulb size={18} className="text-gray-400 hidde xl:block" />
+            <TbBulb size={18} className="text-gray-400 hidden xl:block" />
             The Token Approvals page lists contracts that have been approved to
             spend an address’s tokens. The at-risk amount shows what is
             vulnerable if the contracts were hacked. Learn more about this page
@@ -296,7 +302,7 @@ const Page = () => {
 
       <CookieConsent />
 
-      <Footer />
+      <Footer toggleRevoke={toggleRevoke} />
     </>
   );
 };

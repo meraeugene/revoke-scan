@@ -4,7 +4,11 @@ import { FaXTwitter } from "react-icons/fa6";
 import { LuArrowUpToLine } from "react-icons/lu";
 import { RxExternalLink } from "react-icons/rx";
 
-const Footer = () => {
+interface FooterProps {
+  toggleRevoke: () => void;
+}
+
+const Footer: React.FC<FooterProps> = ({ toggleRevoke }) => {
   return (
     <footer className="lg:px-8 xl:px-64 p-4  bg-gray-100 py-6 text-sm  relative ">
       <div className="flex items-center justify-between pb-6">
@@ -60,15 +64,15 @@ const Footer = () => {
             <h3 className="font-semibold">Company</h3>
             <ul className="mt-2 space-y-2">
               <li>
-                <Link
-                  href="https://bscscan.com/delegate"
-                  className="hover:text-[#0784C3] duration-100 ease-in-out text-[#081D35] "
+                <button
+                  className="hover:text-[#0784C3] cursor-pointer duration-100 ease-in-out text-[#081D35] "
+                  onClick={toggleRevoke}
                 >
                   Delegate to RevokeScan{" "}
                   <span className="bg-[#0784C3] ml-1 text-white text-[11px] px-2 py-1 font-medium rounded-full">
                     Staking
                   </span>
-                </Link>
+                </button>
               </li>
               <li>
                 <Link

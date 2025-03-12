@@ -4,71 +4,111 @@ import SearchComponent from "./Search";
 import { ButtonIcon } from "./ButtonIcon";
 import { FaGasPump } from "react-icons/fa";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
+import axios from "axios";
 
 const Header = () => {
-  const [ethPrice, setEthPrice] = useState({
-    price: "$2680.01",
-    change: "+0.47%",
-    color: "#00A186", // Green for positive change
-  });
-
-  const router = useRouter();
+  const [ethPrice, setEthPrice] = useState<{
+    price: string;
+    change: string;
+    color: string;
+  } | null>(null);
+  const [gasPrice, setGasPrice] = useState<string | null>(null);
 
   useEffect(() => {
-    // Simulate price update
-    const timeout = setTimeout(() => {
-      setEthPrice({
-        price: "$1895.66",
-        change: "-8.27%",
-        color: "#FF4D4D", // Red for negative change
-      });
-    }, 500);
+    const fetchEthPriceAndGas = async () => {
+      try {
+        const response = await axios.get("https://api.etherscan.io/api", {
+          params: {
+            module: "stats",
+            action: "ethprice",
+            apikey: process.env.NEXT_PUBLIC_ETHERSCAN_API_KEY,
+          },
+        });
 
-    return () => clearTimeout(timeout);
+        if (response.data.status === "1") {
+          const ethPriceNow = parseFloat(response.data.result.ethusd);
+          const ethPrice24hAgo =
+            ethPriceNow / (1 + parseFloat(response.data.result.ethbtc));
+
+          if (
+            !isNaN(ethPriceNow) &&
+            !isNaN(ethPrice24hAgo) &&
+            ethPrice24hAgo !== 0
+          ) {
+            const change = (
+              ((ethPriceNow - ethPrice24hAgo) / ethPrice24hAgo) *
+              100
+            ).toFixed(2);
+            const sign = parseFloat(change) >= 0 ? "+" : "";
+            const color = parseFloat(change) >= 0 ? "#00A186" : "#F44336";
+
+            setEthPrice({
+              price: `$${ethPriceNow.toLocaleString(undefined, {
+                minimumFractionDigits: 2,
+                maximumFractionDigits: 2,
+              })}`,
+              change: `(${sign}${change}%)`,
+              color,
+            });
+          }
+        }
+
+        const gasResponse = await axios.get("https://api.etherscan.io/api", {
+          params: {
+            module: "gastracker",
+            action: "gasoracle",
+            apikey: process.env.NEXT_PUBLIC_ETHERSCAN_API_KEY,
+          },
+        });
+
+        if (gasResponse.data.status === "1") {
+          const gasPriceGwei = parseFloat(
+            gasResponse.data.result.ProposeGasPrice
+          ).toFixed(3);
+          setGasPrice(`${gasPriceGwei} Gwei`);
+        }
+      } catch (error) {
+        console.error("Error fetching Ethereum price or gas price:", error);
+      }
+    };
+
+    fetchEthPriceAndGas();
+    const interval = setInterval(fetchEthPriceAndGas, 30000);
+
+    return () => clearInterval(interval);
   }, []);
 
-  // Function to handle search when user presses Enter
-  const handleSearch = (event: React.KeyboardEvent<HTMLInputElement>) => {
-    if (event.key === "Enter") {
-      const query = event.currentTarget.value.trim();
-      if (!query) return;
-
-      window.location.href = `https://bscscan.com/search?q=${encodeURIComponent(
-        query
-      )}`;
-    }
-  };
-
   return (
-    <div className="sticky py-2 p-4 lg:px-8 xl:px-64 border-b  md:flex items-center justify-between ">
-      <div className="md:flex items-center gap-4 text-xs hidden ">
-        <p className="text-[#6C757D]">
-          ETH Price:{" "}
-          <span className="text-[#0784C3]">
-            {ethPrice.price}{" "}
-            <span style={{ color: ethPrice.color }}>{ethPrice.change}</span>
-          </span>{" "}
-        </p>
-        <div className="flex items-center gap-2 md:hidden lg:flex">
-          <FaGasPump className="text-gray-400 " size={13} />
-          <p>
-            Gas:{" "}
-            <Link
-              href="https://bscscan.com/gastracker"
-              className="text-[#0784C3]"
-            >
-              1 GWei
-            </Link>
+    <div className="sticky py-2 p-4 lg:px-8 xl:px-64 border-b flex items-center justify-between">
+      <div className="md:flex items-center gap-4 text-sm hidden ">
+        {ethPrice && (
+          <p className="text-gray-600 text-xs">
+            ETH Price:{" "}
+            <span className="text-blue-600">
+              {ethPrice.price}{" "}
+              <span style={{ color: ethPrice.color }}>{ethPrice.change}</span>
+            </span>
           </p>
-        </div>
+        )}
+
+        {gasPrice && (
+          <div className="flex items-center gap-2 text-xs">
+            <FaGasPump className="text-gray-400" size={13} />
+            <p className="text-gray-600 text-xs">
+              Gas:{" "}
+              <Link
+                href="https://etherscan.io/gastracker"
+                className="text-blue-600"
+              >
+                {gasPrice}
+              </Link>
+            </p>
+          </div>
+        )}
       </div>
 
-      <div className="flex items-center gap-2">
-        <SearchComponent
-          placeholder="Search by Address / Txn Hash / Block / Token / Domain Name"
-          onKeyDown={handleSearch} // Listen for Enter key
-        />
+      <div className="flex items-center gap-2 w-full md:w-fit">
+        <SearchComponent placeholder="Search by Address / Txn Hash / Block / Token / Domain Name" />
         <ButtonIcon />
       </div>
     </div>
