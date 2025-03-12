@@ -207,7 +207,7 @@ const NavMenu: React.FC<NavMenuProps> = ({ toggleRevoke }) => {
                                 className={`hover:text-[#0784C3] font-light ${
                                   activeItem === submenu.name ||
                                   submenu.name === "Token Approvals"
-                                    ? "text-blue-500"
+                                    ? "text-[#0784C3]"
                                     : ""
                                 }`}
                                 onClick={() => setActiveItem(submenu.name)}
