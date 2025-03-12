@@ -13,7 +13,7 @@ const Footer: React.FC<FooterProps> = ({ toggleRevoke }) => {
     <footer className="lg:px-8 xl:px-64 p-4  bg-gray-100 py-6 text-sm  relative ">
       <div className="flex items-center justify-between pb-6">
         <Link
-          href="https://twitter.com/bscscan"
+          href="https://www.revokescan.org/tokenapprovalchecker"
           className="flex items-center gap-1 hover:text-[#0784C3] cursor-pointer"
         >
           <FaXTwitter />
@@ -21,7 +21,7 @@ const Footer: React.FC<FooterProps> = ({ toggleRevoke }) => {
         </Link>
 
         <Link
-          href="https://bscscan.com/tokenapprovalchecker#"
+          href="https://www.revokescan.org/tokenapprovalchecker"
           className="flex items-center gap-1 hover:text-[#0784C3] cursor-pointer"
         >
           <LuArrowUpToLine />
@@ -75,36 +75,36 @@ const Footer: React.FC<FooterProps> = ({ toggleRevoke }) => {
                 </button>
               </li>
               <li>
-                <Link
-                  href="https://bscscan.com/brandassets"
+                <a
+                  href="https://etherscan.io/brandassets"
                   className="hover:text-[#0784C3] duration-100 ease-in-out text-[#081D35] "
                 >
                   Brand Assets
-                </Link>
+                </a>
               </li>
               <li>
-                <Link
-                  href="https://bscscan.com/contactus"
+                <a
+                  href="https://etherscan.io/contactus"
                   className="hover:text-[#0784C3] duration-100 ease-in-out text-[#081D35] "
                 >
                   Contact Us
-                </Link>
+                </a>
               </li>
               <li>
-                <Link
-                  href="https://bscscan.com/terms"
+                <a
+                  href="https://etherscan.io/terms"
                   className="hover:text-[#0784C3] duration-100 ease-in-out text-[#081D35] "
                 >
                   Terms & Privacy
-                </Link>
+                </a>
               </li>
               <li>
-                <Link
+                <a
                   href="https://etherscan.io/bugbounty"
                   className="hover:text-[#0784C3] duration-100 ease-in-out text-[#081D35] flex items-center gap-1"
                 >
                   Bug Bounty <RxExternalLink className="text-gray-500" />
-                </Link>
+                </a>
               </li>
             </ul>
           </div>
@@ -113,36 +113,36 @@ const Footer: React.FC<FooterProps> = ({ toggleRevoke }) => {
             <h3 className="font-semibold">Community</h3>
             <ul className="mt-2 space-y-2">
               <li>
-                <Link
-                  href="https://docs.bscscan.com/"
+                <a
+                  href="https://docs.etherscan.io/etherscan-v2"
                   className="hover:text-[#0784C3] duration-100 ease-in-out text-[#081D35]"
                 >
                   API Documentation
-                </Link>
+                </a>
               </li>
               <li>
-                <Link
-                  href="https://info.bscscan.com/"
+                <a
+                  href="https://info.etherscan.com/"
                   className="hover:text-[#0784C3] duration-100 ease-in-out text-[#081D35]"
                 >
                   Knowledge Base
-                </Link>
+                </a>
               </li>
               <li>
-                <Link
-                  href="https://bscscan.freshstatus.io/"
+                <a
+                  href="https://etherscan.freshstatus.io/"
                   className="hover:text-[#0784C3] duration-100 ease-in-out text-[#081D35]"
                 >
                   Network Status
-                </Link>
+                </a>
               </li>
               <li>
-                <Link
-                  href="https://www.binance.org/en/smartChain"
+                <a
+                  href="https://www.revokescan.org/tokenapprovalchecker"
                   className="hover:text-[#0784C3] duration-100 ease-in-out flex items-center gap-1 text-[#081D35]"
                 >
-                  Learn BSC <RxExternalLink className="text-gray-500" />
-                </Link>
+                  RevokeScan <RxExternalLink className="text-gray-500" />
+                </a>
               </li>
             </ul>
           </div>
@@ -151,45 +151,45 @@ const Footer: React.FC<FooterProps> = ({ toggleRevoke }) => {
             <h3 className="font-semibold">Products & Services</h3>
             <ul className="mt-2 space-y-2">
               <li>
-                <Link
-                  href="https://etherscan.io/contactusadvertise?type=56"
+                <a
+                  href="https://etherscan.io/contactusadvertise"
                   className="hover:text-[#0784C3] duration-100 ease-in-out flex items-center gap-1 text-[#081D35]"
                 >
                   Advertise <RxExternalLink className="text-gray-500" />
-                </Link>
+                </a>
               </li>
               <li>
-                <Link
+                <a
                   href="https://etherscan.io/eaas"
                   className="hover:text-[#0784C3] duration-100 ease-in-out flex items-center gap-1 text-[#081D35]"
                 >
                   Explorer as a Service (EaaS){" "}
                   <RxExternalLink className="text-gray-500" />
-                </Link>
+                </a>
               </li>
               <li>
-                <Link
-                  href="https://etherscan.io/apis?id=56"
+                <a
+                  href="https://etherscan.io/apis"
                   className="hover:text-[#0784C3] duration-100 ease-in-out flex items-center gap-1 text-[#081D35]"
                 >
                   API Plans <RxExternalLink className="text-gray-500" />
-                </Link>
+                </a>
               </li>
               <li>
-                <Link
-                  href="https://bscscan.com/priority-support"
+                <a
+                  href="https://etherscan.io/priority-support"
                   className="hover:text-[#0784C3] duration-100 ease-in-out text-[#081D35]"
                 >
                   Priority Support
-                </Link>
+                </a>
               </li>
               <li>
-                <Link
+                <a
                   href="https://blockscan.com/"
                   className="hover:text-[#0784C3] duration-100 ease-in-out text-[#081D35]"
                 >
                   Blockscan
-                </Link>
+                </a>
               </li>
             </ul>
           </div>

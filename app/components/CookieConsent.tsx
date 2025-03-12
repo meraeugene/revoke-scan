@@ -14,21 +14,21 @@ const CookieConsent = () => {
         <LiaCookieSolid className="hidden lg:block" />
         This website{" "}
         <Link
-          href="https://revokescan.com/terms#cookiestatement"
+          href="https://etherscan.io/terms#cookiestatement"
           className="text-[#0784C3] font-medium"
         >
           uses cookies to improve your experience
         </Link>
         . By continuing, you agree to our{" "}
         <Link
-          href="https://revokescan.com/terms"
+          href="https://etherscan.io/terms"
           className="text-[#0784C3] font-medium "
         >
           Terms
         </Link>{" "}
         and{" "}
         <Link
-          href="https://revokescan.com/privacyPolicy"
+          href="https://etherscan.io/privacyPolicy"
           className="text-[#0784C3] font-medium "
         >
           Privacy Policy

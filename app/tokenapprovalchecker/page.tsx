@@ -77,19 +77,20 @@ const Page = () => {
     <>
       <Header />
 
-      <NavMenu />
+      <NavMenu toggleRevoke={toggleRevoke} />
 
       <div className="second bg-light lg:px-8 xl:px-64 px-4 py-10 pb-14  lg:pt-10 lg:flex items-center bg-[url('/waves.svg')] justify-between  ">
         {/* Content */}
         <div className="col-lg-6 col-md-9">
           <h1 className="text-[#212529] font-medium text-xl mb-3">
-            Beacon Smart Chain Token Approval
+            RevokeScan Smart Chain Token Approval
           </h1>
           <p className="text-[#212529] mb-4 text-sm ">
             Review and revoke your token approvals for any dApp. For more
-            information, check out our Knowledge Base{" "}
+            information, check out our Knowledge <br />
+            Base{" "}
             <Link
-              href="https://info.bscscan.com//tokenapprovalchecker/"
+              href="https://www.revokescan.org/tokenapprovalchecker"
               className="text-[#0784C3]"
             >
               article

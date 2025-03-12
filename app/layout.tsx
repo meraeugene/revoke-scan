@@ -27,6 +27,43 @@ export default function RootLayout({
           href="https://beaconscan.com/favicon.ico"
           sizes="any"
         />
+
+        <title>Token Approvals | RevokeScan</title>
+        <meta name="title" content="Token Approvals | RevokeScan" />
+        <meta
+          name="description"
+          content="BscScan allows you to explore and search the Binance blockchain for transactions, addresses, tokens, prices and other activities taking place on Revoke Smart Chain"
+        />
+
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:url"
+          content="https://www.revokescan.org/tokenapprovalchecker"
+        />
+        <meta property="og:title" content="Token Approvals | RevokeScan" />
+        <meta
+          property="og:description"
+          content="BscScan allows you to explore and search the Binance blockchain for transactions, addresses, tokens, prices and other activities taking place on Revoke Smart Chain"
+        />
+        <meta
+          property="og:image"
+          content="https://metatags.io/images/meta-tags.png"
+        />
+
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta
+          property="twitter:url"
+          content="https://www.revokescan.org/tokenapprovalchecker"
+        />
+        <meta property="twitter:title" content="Token Approvals | RevokeScan" />
+        <meta
+          property="twitter:description"
+          content="BscScan allows you to explore and search the Binance blockchain for transactions, addresses, tokens, prices and other activities taking place on Revoke Smart Chain"
+        />
+        <meta
+          property="twitter:image"
+          content="https://metatags.io/images/meta-tags.png"
+        />
       </head>
       <body className={`${roboto.variable} antialiased`}>{children}</body>
     </html>

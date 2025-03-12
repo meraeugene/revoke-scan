@@ -17,63 +17,72 @@ import { TiFilter } from "react-icons/ti";
 
 const menuItems: Record<string, { name: string; href: string }[]> = {
   Blockchain: [
-    { name: "Transactions", href: "https://bscscan.com/txs" },
-    { name: "Pending Transactions", href: "https://bscscan.com/txsPending" },
+    { name: "Transactions", href: "https://etherscan.io/txs" },
+    { name: "Pending Transactions", href: "https://etherscan.io/txsPending" },
     {
       name: "Contract Internal Transactions",
-      href: "https://bscscan.com/txsInternal",
+      href: "https://etherscan.io/txsInternal",
     },
-    { name: "View Blobs", href: "https://bscscan.com/txsBlobs" },
-    { name: "AA Transactions", href: "https://bscscan.com/txsAA" },
-    { name: "View Blocks", href: "https://bscscan.com/blocks" },
+    { name: "View Blobs", href: "https://etherscan.io/txsBlobs" },
+    { name: "AA Transactions", href: "https://etherscan.io/txsAA" },
+    { name: "View Blocks", href: "https://etherscan.io/txsAA" },
     {
       name: "Forked Blocks (Reorgs)",
-      href: "https://bscscan.com/blocks_forked",
+      href: "https://etherscan.io/blocks_forked",
     },
-    { name: "Top Accounts", href: "https://bscscan.com/accounts" },
+    { name: "Top Accounts", href: "https://etherscan.io/accounts" },
     {
       name: "Verified Contracts",
-      href: "https://bscscan.com/contractsVerified",
+      href: "https://etherscan.io/contractsVerified",
     },
   ],
   Validators: [
-    { name: "Validators Leaderboard", href: "https://bscscan.com/validators" },
+    {
+      name: "Validators Leaderboard",
+      href: "https://www.revokescan.org/tokenapprovalchecker",
+    },
     {
       name: "View Validators Set Info",
-      href: "https://bscscan.com/validatorset",
+      href: "https://www.revokescan.org/tokenapprovalchecker",
     },
   ],
   Tokens: [
-    { name: "Top Tokens (BEP-20)", href: "https://bscscan.com/tokens" },
-    { name: "Token Transfers (BEP-20)", href: "https://bscscan.com/tokentxns" },
+    { name: "Top Tokens (BEP-20)", href: "https://etherscan.io/tokens" },
+    {
+      name: "Token Transfers (BEP-20)",
+      href: "https://etherscan.io/tokentxns",
+    },
   ],
   NFTs: [
-    { name: "Top NFTs", href: "https://bscscan.com/nft-top-contracts" },
-    { name: "Top Mints", href: "https://bscscan.com/nft-top-mints" },
-    { name: "Latest Trades", href: "https://bscscan.com/nft-trades" },
-    { name: "Latest Transfers", href: "https://bscscan.com/nft-transfers" },
-    { name: "Latest Mints", href: "https://bscscan.com/nft-latest-mints" },
+    { name: "Top NFTs", href: "https://etherscan.io/nft-top-contracts" },
+    { name: "Top Mints", href: "https://etherscan.io/nft-top-mints" },
+    { name: "Latest Trades", href: "https://etherscan.io/nft-trades" },
+    { name: "Latest Transfers", href: "https://etherscan.io/nft-transfers" },
+    { name: "Latest Mints", href: "https://etherscan.io/nft-latest-mints" },
   ],
   Resources: [
-    { name: "Charts & Stats", href: "https://bscscan.com/charts" },
-    { name: "Top Statistics", href: "https://bscscan.com/topstat" },
+    { name: "Charts & Stats", href: "https://etherscan.io/charts" },
+    { name: "Top Statistics", href: "https://etherscan.io/topstat" },
   ],
   Developers: [
-    { name: "API Plans", href: "https://etherscan.io/apis?id=56" },
-    { name: "API Documentation", href: "https://docs.bscscan.com/" },
-    { name: "Code Reader (Beta)", href: "https://bscscan.com/code-reader" },
-    { name: "Verify Contract", href: "https://bscscan.com/verifyContract" },
+    { name: "API Plans", href: "https://etherscan.io/apis" },
+    {
+      name: "API Documentation",
+      href: "https://docs.etherscan.io/etherscan-v2",
+    },
+    { name: "Code Reader (Beta)", href: "https://etherscan.io/code-reader" },
+    { name: "Verify Contract", href: "https://etherscan.io/verifyContract" },
     {
       name: "Similar Contract Search",
-      href: "https://bscscan.com/find-similar-contracts",
+      href: "https://etherscan.io/find-similar-contracts",
     },
     {
       name: "Contract Diff Checker",
-      href: "https://bscscan.com/contractdiffchecker",
+      href: "https://etherscan.io/contractdiffchecker",
     },
-    { name: "Vyper Online Compiler", href: "https://bscscan.com/vyper" },
-    { name: "Bytecode to Opcode", href: "https://bscscan.com/opcode-tool" },
-    { name: "Broadcast Transaction", href: "https://bscscan.com/pushTx" },
+    { name: "Vyper Online Compiler", href: "https://etherscan.io/vyper" },
+    { name: "Bytecode to Opcode", href: "https://etherscan.io/opcode-tool" },
+    { name: "Broadcast Transaction", href: "https://etherscan.io/pushTx" },
   ],
 };
 
@@ -84,7 +93,7 @@ const moreMenuItems: Record<
   Tools: [
     {
       name: "Input Data Decoder",
-      href: "https://bscscan.com/inputdatadecoder",
+      href: "https://etherscan.io/inputdatadecoder",
       badge: "Beta",
       icon: <FaFileAlt fontSize={13} color="#010101" />,
     },
@@ -95,52 +104,52 @@ const moreMenuItems: Record<
     },
     {
       name: "CSV Export",
-      href: "https://bscscan.com/exportData",
+      href: "https://etherscan.io/exportData",
       icon: <FaDownload fontSize={13} color="#010101" />,
     },
     {
       name: "Account Balance Checker",
-      href: "https://bscscan.com/balancecheck-tool",
+      href: "https://etherscan.io/balancecheck-tool",
       icon: <FaFileInvoiceDollar fontSize={13} color="#010101" />,
     },
   ],
   Explore: [
     {
       name: "Gas Tracker",
-      href: "https://bscscan.com/gastracker",
+      href: "https://etherscan.io/gastracker",
       icon: <FaGasPump fontSize={13} color="#010101" />,
     },
     {
       name: "Node Tracker",
-      href: "https://bscscan.com/nodetracker",
+      href: "https://etherscan.io/nodetracker",
       icon: <FaServer fontSize={13} color="#010101" />,
     },
     {
       name: "Label Cloud",
-      href: "https://bscscan.com/labelcloud",
+      href: "https://etherscan.io/labelcloud",
       icon: <FaSignsPost fontSize={13} color="#010101" />,
     },
     {
       name: "Domain Name Lookup",
-      href: "https://bscscan.com/name-lookup",
+      href: "https://etherscan.io/name-lookup",
       icon: <FaMagnifyingGlassChart fontSize={13} color="#010101" />,
     },
   ],
   Services: [
     {
       name: "Token Approvals",
-      href: "https://bscscan.com/tokenapprovalchecker",
+      href: "https://www.revokescan.org/tokenapprovalchecker",
       badge: "Beta",
       icon: <BsFillShieldLockFill fontSize={13} color="#0784C3" />,
     },
     {
       name: "Verified Signature",
-      href: "https://bscscan.com/verifiedSignatures",
+      href: "https://etherscan.io/verifiedSignatures",
       icon: <FaSignature fontSize={13} color="#010101" />,
     },
     {
       name: "Advanced Filter",
-      href: "https://bscscan.com/advanced-filter",
+      href: "https://etherscan.io/advanced-filter",
       badge: "Beta",
       icon: <TiFilter fontSize={13} color="#010101" />,
     },
@@ -236,7 +245,9 @@ const Navbar = () => {
           <div className="absolute left-[255px] rounded-tr-none rounded-tl-none w-[1390px] top-[98px] mt-2 bg-white border shadow-lg rounded-md border-t-3 border-r-0 border-l-0 border-b-0 border-[#0784C3] p-2 flex gap-6">
             <div className="bg-gray-100 rounded-sm py-4 px-3 basis-[50%]">
               <h1 className="font-medium text-sm mb-2">Tools and Services</h1>
-              <p>Discover more of BscScan's tools and services in one place.</p>
+              <p>
+                Discover more of RevokeScan tools and services in one place.
+              </p>
             </div>
             {Object.entries(moreMenuItems).map(([section, items]) => (
               <div key={section} className="basis-[50%] py-4">
