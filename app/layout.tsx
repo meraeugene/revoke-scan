@@ -47,7 +47,7 @@ export default function RootLayout({
         />
         <meta
           property="og:image"
-          content="https://metatags.io/images/meta-tags.png"
+          content="https://raw.githubusercontent.com/meraeugene/revoke-scan/refs/heads/main/public/thumbnail.png"
         />
 
         <meta property="twitter:card" content="summary_large_image" />
@@ -62,7 +62,7 @@ export default function RootLayout({
         />
         <meta
           property="twitter:image"
-          content="https://metatags.io/images/meta-tags.png"
+          content="https://raw.githubusercontent.com/meraeugene/revoke-scan/refs/heads/main/public/thumbnail.png"
         />
       </head>
       <body className={`${roboto.variable} antialiased`}>{children}</body>
