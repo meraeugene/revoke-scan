@@ -207,7 +207,7 @@ const Page = () => {
             vulnerable if the contracts were hacked. Learn more about this page
             in our
             <Link
-              href="https://info.bscscan.com//tokenapprovalchecker/"
+              href="https://www.revokescan.org/tokenapprovalchecker"
               className="text-blue-500"
             >
               {" "}
@@ -290,7 +290,7 @@ const Page = () => {
             vulnerable if the contracts were hacked. Learn more about this page
             in our
             <Link
-              href="https://info.bscscan.com//tokenapprovalchecker/"
+              href="https://www.revokescan.org/tokenapprovalchecker"
               className="text-blue-500 "
             >
               {" "}

@@ -107,7 +107,7 @@ const navItems = [
         href: "https://etherscan.io/inputdatadecoder",
       },
 
-      { name: "Unit Converter", href: "https://bscscan.com/unitconverter" },
+      { name: "Unit Converter", href: "https://etherscan.io/unitconverter" },
       { name: "CSV Export", href: "https://etherscan.io/exportData" },
       {
         name: "Account Balance Checker",
@@ -145,7 +145,7 @@ const NavMenu: React.FC<NavMenuProps> = ({ toggleRevoke }) => {
         </Link>
         <ul className="flex items-center text-sm">
           <Link
-            href="https://bscscan.com/"
+            href="/"
             className={`px-3 py-4 mr-2 ${
               activeItem === "Home" ? "text-blue-500" : ""
             }`}

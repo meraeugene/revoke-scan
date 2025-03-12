@@ -42,7 +42,7 @@ const Footer: React.FC<FooterProps> = ({ toggleRevoke }) => {
             </span>
           </p>
 
-          <p className="mt-2 text-sm">
+          <p className="mt-4 text-sm">
             RevokeScan is a Block Explorer and Analytics Platform for Ethereum{" "}
             2.0.
           </p>
