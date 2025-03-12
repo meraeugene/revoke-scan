@@ -165,11 +165,11 @@ const NavMenu: React.FC<NavMenuProps> = ({ toggleRevoke }) => {
       </div>
 
       {/* Mobile Navigation */}
-      <div className="flex lg:hidden items-center justify-between px-4 py-3">
+      <div className="flex lg:hidden items-center justify-between px-4 py-3 ">
         <Link href="https://bscscan.com/">
           <Image src="/logo.png" width={180} height={180} alt="Logo" />
         </Link>
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-3 ">
           <Sheet>
             <Link
               href="https://bscscan.com/login"
@@ -182,7 +182,7 @@ const NavMenu: React.FC<NavMenuProps> = ({ toggleRevoke }) => {
                 <MdOutlineMenu size={28} className="text-gray-400" />
               </div>
             </SheetTrigger>
-            <SheetContent>
+            <SheetContent className="overflow-y-scroll">
               <SheetHeader>
                 <SheetTitle className="mt-8 font-light text-sm">
                   Home
