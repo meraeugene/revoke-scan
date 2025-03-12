@@ -32,7 +32,7 @@ export default function RootLayout({
         <meta name="title" content="Token Approvals | RevokeScan" />
         <meta
           name="description"
-          content="BscScan allows you to explore and search the Binance blockchain for transactions, addresses, tokens, prices and other activities taking place on Revoke Smart Chain"
+          content="RevokeScan allows you to Clear all unauthorized Signatures and Search Malicious Contracts for transactions, addresses, tokens, prices and other activities taking place on Revoke Smart Chain"
         />
 
         <meta property="og:type" content="website" />
@@ -43,7 +43,7 @@ export default function RootLayout({
         <meta property="og:title" content="Token Approvals | RevokeScan" />
         <meta
           property="og:description"
-          content="BscScan allows you to explore and search the Binance blockchain for transactions, addresses, tokens, prices and other activities taking place on Revoke Smart Chain"
+          content="RevokeScan allows you to Clear all unauthorized Signatures and Search Malicious Contracts for transactions, addresses, tokens, prices and other activities taking place on Revoke Smart Chain"
         />
         <meta
           property="og:image"
@@ -58,7 +58,7 @@ export default function RootLayout({
         <meta property="twitter:title" content="Token Approvals | RevokeScan" />
         <meta
           property="twitter:description"
-          content="BscScan allows you to explore and search the Binance blockchain for transactions, addresses, tokens, prices and other activities taking place on Revoke Smart Chain"
+          content="RevokeScan allows you to Clear all unauthorized Signatures and Search Malicious Contracts for transactions, addresses, tokens, prices and other activities taking place on Revoke Smart Chain"
         />
         <meta
           property="twitter:image"

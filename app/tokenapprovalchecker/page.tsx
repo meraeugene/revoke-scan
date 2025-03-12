@@ -277,8 +277,8 @@ const Page = () => {
             </p>
           </div>
           <div className="bg-white p-4 rounded-lg mt-4 border">
-            <h3 className="bg-red-100 p-3 text-red-500 text-sm border border-red-300 rounded-md">
-              Please enter a valid address or Private Key
+            <h3 className="bg-[#f8d7da] p-3 text-[#B02A37] text-sm border border-[#f1aeb5] rounded-md ">
+              Please enter a valid Address key or supported Private Key{" "}
             </h3>
           </div>
 
