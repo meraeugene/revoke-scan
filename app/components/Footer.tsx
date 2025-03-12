@@ -55,7 +55,7 @@ const Footer: React.FC<FooterProps> = ({ toggleRevoke }) => {
                 alt="metamask"
               />
             </span>{" "}
-            Add Beacon Network
+            Add Ethereum Mainnet Network
           </button>
         </div>
 
