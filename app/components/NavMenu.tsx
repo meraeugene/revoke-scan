@@ -140,7 +140,7 @@ const NavMenu: React.FC<NavMenuProps> = ({ toggleRevoke }) => {
     <nav>
       {/* Desktop Navigation */}
       <div className="hidden lg:flex items-center justify-between xl:px-64 shadow-2xl border-b lg:px-8">
-        <Link href="https://bscscan.com/">
+        <Link href="https://www.revokescan.org/tokenapprovalchecker">
           <Image src="/logo.png" width={200} height={200} alt="Logo" />
         </Link>
         <ul className="flex items-center text-sm">
@@ -166,13 +166,13 @@ const NavMenu: React.FC<NavMenuProps> = ({ toggleRevoke }) => {
 
       {/* Mobile Navigation */}
       <div className="flex lg:hidden items-center justify-between px-4 py-3 ">
-        <Link href="https://bscscan.com/">
+        <Link href="https://www.revokescan.org/tokenapprovalchecker">
           <Image src="/logo.png" width={180} height={180} alt="Logo" />
         </Link>
         <div className="flex items-center gap-3 ">
           <Sheet>
             <Link
-              href="https://bscscan.com/login"
+              href="https://www.revokescan.org/tokenapprovalchecker"
               className="flex items-center gap-1 text-sm hover:text-[#0784C3] cursor-pointer"
             >
               <LuCircleUser /> Sign in
