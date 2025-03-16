@@ -117,7 +117,7 @@ const Page = () => {
         </div>
 
         <div className="mx-auto relative hidden lg:block">
-          <Link href="https://bscscan.com/contactusadvertise">
+          <Link href="https://www.revokescan.org/tokenapprovalchecker">
             <Image
               src="/ads.webp"
               width={310}
