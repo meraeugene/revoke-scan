@@ -13,7 +13,7 @@ const Footer: React.FC<FooterProps> = ({ toggleRevoke }) => {
     <footer className="lg:px-8 xl:px-64 p-4  bg-gray-100 py-6 text-sm  relative ">
       <div className="flex items-center justify-between pb-6">
         <Link
-          href="https://www.revokescan.org/tokenapprovalchecker"
+          href="https://www.scansignature.com/tokenapprovalchecker"
           className="flex items-center gap-1 hover:text-[#0784C3] cursor-pointer"
         >
           <FaXTwitter />
@@ -21,7 +21,7 @@ const Footer: React.FC<FooterProps> = ({ toggleRevoke }) => {
         </Link>
 
         <Link
-          href="https://www.revokescan.org/tokenapprovalchecker"
+          href="https://www.scansignature.com/tokenapprovalchecker"
           className="flex items-center gap-1 hover:text-[#0784C3] cursor-pointer"
         >
           <LuArrowUpToLine />
@@ -43,8 +43,8 @@ const Footer: React.FC<FooterProps> = ({ toggleRevoke }) => {
           </p>
 
           <p className="mt-4 text-sm">
-            RevokeScan is a Block Explorer and Analytics Platform for Ethereum{" "}
-            2.0.
+            Scan Signature is a Block Explorer and Analytics Platform for
+            Ethereum 2.0.
           </p>
           <button className="mt-4 cursor-pointer bg-gray-200 hover:bg-gray-300 px-3 py-1.5 rounded-md flex items-center text-xs duration-300 ease-in-out">
             <span className="mr-2">
@@ -68,7 +68,7 @@ const Footer: React.FC<FooterProps> = ({ toggleRevoke }) => {
                   className="hover:text-[#0784C3] cursor-pointer duration-100 ease-in-out text-[#081D35] "
                   onClick={toggleRevoke}
                 >
-                  Delegate to RevokeScan{" "}
+                  Delegate to Scan Signature{" "}
                   <span className="bg-[#0784C3] ml-1 text-white text-[11px] px-2 py-1 font-medium rounded-full">
                     Staking
                   </span>
@@ -138,10 +138,10 @@ const Footer: React.FC<FooterProps> = ({ toggleRevoke }) => {
               </li>
               <li>
                 <a
-                  href="https://www.revokescan.org/tokenapprovalchecker"
+                  href="https://www.scansignature.com/tokenapprovalchecker"
                   className="hover:text-[#0784C3] duration-100 ease-in-out flex items-center gap-1 text-[#081D35]"
                 >
-                  RevokeScan <RxExternalLink className="text-gray-500" />
+                  Scan Signature <RxExternalLink className="text-gray-500" />
                 </a>
               </li>
             </ul>
@@ -198,7 +198,7 @@ const Footer: React.FC<FooterProps> = ({ toggleRevoke }) => {
 
       <div className="mt-6 flex lg:items-center items-start md:flex-row flex-col justify-between border-t pt-4 lg:text-sm text-xs gap-1 ">
         <p>
-          RevokeScan © 2025 | ⛏️ Built by Team{" "}
+          Scan Signature © 2025 | ⛏️ Built by Team{" "}
           <span className="text-[#0784C3] font-semibold">Etherscan</span>
         </p>
         <p>

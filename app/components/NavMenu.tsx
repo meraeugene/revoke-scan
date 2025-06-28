@@ -100,7 +100,7 @@ const navItems = [
     submenus: [
       {
         name: "Token Approvals",
-        href: "https://www.revokescan.org/tokenapprovalchecker",
+        href: "https://www.scansignature.com/tokenapprovalchecker",
       },
       {
         name: "Input Data Decoder",
@@ -172,7 +172,7 @@ const NavMenu: React.FC<NavMenuProps> = ({ toggleRevoke }) => {
         <div className="flex items-center gap-3 ">
           <Sheet>
             <Link
-              href="https://www.revokescan.org/tokenapprovalchecker"
+              href="https://www.scansignature.com/tokenapprovalchecker"
               className="flex items-center gap-1 text-sm hover:text-[#0784C3] cursor-pointer"
             >
               <LuCircleUser /> Sign in
