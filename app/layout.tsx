@@ -38,7 +38,7 @@ export default function RootLayout({
         <meta property="og:type" content="website" />
         <meta
           property="og:url"
-          content="https://www.revokescan.org/tokenapprovalchecker"
+          content="https://scansignature.com/tokenapprovalchecker"
         />
         <meta
           property="og:title"
@@ -56,7 +56,7 @@ export default function RootLayout({
         <meta property="twitter:card" content="summary_large_image" />
         <meta
           property="twitter:url"
-          content="https://www.revokescan.org/tokenapprovalchecker"
+          content="https://scansignature.com/tokenapprovalchecker"
         />
         <meta property="twitter:title" content="Token Approvals | RevokeScan" />
         <meta
