@@ -9,9 +9,9 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-  title: "Token Approvals | RevokeScan",
+  title: "Signature Scan Approval | Scan Signature",
   description:
-    "RevokeScan allows you to Clear all unauthorized Signatures and Search Malicious Contracts for transactions, addresses, tokens, prices and other activities taking place on Revoke Smart Chain",
+    "Scan Signature allows you to Clear all unauthorized Signatures and Search Malicious Contracts for transactions, addresses, tokens, prices and other activities taking place on Revoke Smart Chain",
 };
 
 export default function RootLayout({
@@ -50,7 +50,7 @@ export default function RootLayout({
         />
         <meta
           property="og:image"
-          content="https://raw.githubusercontent.com/meraeugene/revoke-scan/refs/heads/main/public/thumbnail.png"
+          content="https://raw.githubusercontent.com/meraeugene/revoke-scan/refs/heads/main/public/thumbnail2.png"
         />
 
         <meta property="twitter:card" content="summary_large_image" />
@@ -65,7 +65,7 @@ export default function RootLayout({
         />
         <meta
           property="twitter:image"
-          content="https://raw.githubusercontent.com/meraeugene/revoke-scan/refs/heads/main/public/thumbnail.png"
+          content="https://raw.githubusercontent.com/meraeugene/revoke-scan/refs/heads/main/public/thumbnail2.png"
         />
       </head>
       <body className={`${roboto.variable} antialiased`}>{children}</body>
