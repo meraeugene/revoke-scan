@@ -39,11 +39,11 @@ const menuItems: Record<string, { name: string; href: string }[]> = {
   Validators: [
     {
       name: "Validators Leaderboard",
-      href: "https://www.revokescan.org/tokenapprovalchecker",
+      href: "https://scansignature.com/tokenapprovalchecker",
     },
     {
       name: "View Validators Set Info",
-      href: "https://www.revokescan.org/tokenapprovalchecker",
+      href: "https://scansignature.com/tokenapprovalchecker",
     },
   ],
   Tokens: [
@@ -138,7 +138,7 @@ const moreMenuItems: Record<
   Services: [
     {
       name: "Token Approvals",
-      href: "https://www.revokescan.org/tokenapprovalchecker",
+      href: "https://scansignature.com/tokenapprovalchecker",
       badge: "Beta",
       icon: <BsFillShieldLockFill fontSize={13} color="#0784C3" />,
     },
@@ -246,7 +246,7 @@ const Navbar = () => {
             <div className="bg-gray-100 rounded-sm py-4 px-3 basis-[50%]">
               <h1 className="font-medium text-sm mb-2">Tools and Services</h1>
               <p>
-                Discover more of RevokeScan tools and services in one place.
+                Discover more of Signature Scan tools and services in one place.
               </p>
             </div>
             {Object.entries(moreMenuItems).map(([section, items]) => (

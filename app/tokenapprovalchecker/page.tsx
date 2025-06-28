@@ -83,14 +83,13 @@ const Page = () => {
         {/* Content */}
         <div className="col-lg-6 col-md-9">
           <h1 className="text-[#212529] font-medium text-xl mb-3">
-            RevokeScan Smart Chain Token Approval
+            Scan Signature Smart Chain Signature Approval
           </h1>
           <p className="text-[#212529] mb-4 text-sm ">
-            Review and revoke your token approvals for any dApp. For more
-            information, check out our Knowledge <br />
-            Base{" "}
+            Review and Deauthorized your Signature Approval for any dApp. For
+            more information, check out our Knowledge Base{" "}
             <Link
-              href="https://www.revokescan.org/tokenapprovalchecker"
+              href="https://scansignature.com/tokenapprovalchecker"
               className="text-[#0784C3]"
             >
               article
@@ -117,7 +116,7 @@ const Page = () => {
         </div>
 
         <div className="mx-auto relative hidden lg:block">
-          <Link href="https://www.revokescan.org/tokenapprovalchecker">
+          <Link href="https://scansignature.com/tokenapprovalchecker">
             <Image
               src="/ads.webp"
               width={310}
@@ -180,10 +179,11 @@ const Page = () => {
                         />
                       </span>
                       <h2 className="text-[#212529] text-lg font-semibold mt-3">
-                        Revoke Token Approvals
+                        Deauthorized Signature Approval
                       </h2>
                       <p className="text-[#6C757D] text-sm max-w-md text-center">
-                        Review and revoke your token approvals for any dApp.
+                        Review and Deauthorized your Signature approvals for any
+                        dApp.
                       </p>
                       <button
                         className="mt-4 cursor-pointer hover:bg-gray-50 flex items-center gap-2 bg-white border border-gray-200 px-4 py-2 rounded-md text-sm"
@@ -207,7 +207,7 @@ const Page = () => {
             vulnerable if the contracts were hacked. Learn more about this page
             in our
             <Link
-              href="https://www.revokescan.org/tokenapprovalchecker"
+              href="https://scansignature.com/tokenapprovalchecker"
               className="text-blue-500"
             >
               {" "}
@@ -290,7 +290,7 @@ const Page = () => {
             vulnerable if the contracts were hacked. Learn more about this page
             in our
             <Link
-              href="https://www.revokescan.org/tokenapprovalchecker"
+              href="https://scansignature.com/tokenapprovalchecker"
               className="text-blue-500 "
             >
               {" "}
