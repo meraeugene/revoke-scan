@@ -141,7 +141,7 @@ const NavMenu: React.FC<NavMenuProps> = ({ toggleRevoke }) => {
       {/* Desktop Navigation */}
       <div className="hidden lg:flex items-center justify-between xl:px-64 shadow-2xl border-b lg:px-8">
         <Link href="https://bscscan.com/">
-          <Image src="/logo.png" width={200} height={200} alt="Logo" />
+          <Image src="/logo4.png" width={200} height={200} alt="Logo" />
         </Link>
         <ul className="flex items-center text-sm">
           <Link
@@ -167,7 +167,7 @@ const NavMenu: React.FC<NavMenuProps> = ({ toggleRevoke }) => {
       {/* Mobile Navigation */}
       <div className="flex lg:hidden items-center justify-between px-4 py-3 ">
         <Link href="https://bscscan.com/">
-          <Image src="/logo.png" width={180} height={180} alt="Logo" />
+          <Image src="/logo4.png" width={180} height={180} alt="Logo" />
         </Link>
         <div className="flex items-center gap-3 ">
           <Sheet>

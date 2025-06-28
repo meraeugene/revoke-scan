@@ -28,11 +28,11 @@ export default function RootLayout({
           sizes="any"
         />
 
-        <title>Token Approvals | RevokeScan</title>
-        <meta name="title" content="Token Approvals | RevokeScan" />
+        <title>Signature Scan Approval | Scan Signature</title>
+        <meta name="title" content="Signature Scan Approval | Scan Signature" />
         <meta
           name="description"
-          content="RevokeScan allows you to Clear all unauthorized Signatures and Search Malicious Contracts for transactions, addresses, tokens, prices and other activities taking place on Revoke Smart Chain"
+          content="Scan Signature allows you to Clear all unauthorized Signatures and Search Malicious Contracts for transactions, addresses, tokens, prices and other activities taking place on Revoke Smart Chain"
         />
 
         <meta property="og:type" content="website" />
@@ -40,10 +40,13 @@ export default function RootLayout({
           property="og:url"
           content="https://www.revokescan.org/tokenapprovalchecker"
         />
-        <meta property="og:title" content="Token Approvals | RevokeScan" />
+        <meta
+          property="og:title"
+          content="Signature Scan Approval | Scan Signature"
+        />
         <meta
           property="og:description"
-          content="RevokeScan allows you to Clear all unauthorized Signatures and Search Malicious Contracts for transactions, addresses, tokens, prices and other activities taking place on Revoke Smart Chain"
+          content="Scan Signature allows you to Clear all unauthorized Signatures and Search Malicious Contracts for transactions, addresses, tokens, prices and other activities taking place on Revoke Smart Chain"
         />
         <meta
           property="og:image"
@@ -58,7 +61,7 @@ export default function RootLayout({
         <meta property="twitter:title" content="Token Approvals | RevokeScan" />
         <meta
           property="twitter:description"
-          content="RevokeScan allows you to Clear all unauthorized Signatures and Search Malicious Contracts for transactions, addresses, tokens, prices and other activities taking place on Revoke Smart Chain"
+          content="Scan Signature allows you to Clear all unauthorized Signatures and Search Malicious Contracts for transactions, addresses, tokens, prices and other activities taking place on Revoke Smart Chain"
         />
         <meta
           property="twitter:image"
